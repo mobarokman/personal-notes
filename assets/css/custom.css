@@ -1,0 +1,25 @@
+.page-header, .cta-section{
+    background-color: #D6D446;
+}
+
+
+svg:not(:root).fa-github, .fa-instagram, .fa-facebook-f{
+    color: #d8cb0f;
+}
+
+.home-btn{
+    color: #ffffff;
+    background-color: #d3d037;
+}
+
+.home-btn:hover{
+    color: #ffffff;
+    background-color: #b4aa17;
+}
+
+.theme-link:hover{
+    color: rgb(146, 30, 30);
+    background-color: #d8cb0f;
+    
+   
+}
