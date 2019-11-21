@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+
+    <!-- primsm js -->
+    <link rel="stylesheet" href="./assets/prismjs/prism.css">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="container p-5">
+        <form>
+           <div class="col-md-2">
+            <label for="">Enter the number</label>
+            <input oninput="isPrime()" class="form-control" id="input-num" type="text" name="num">
+            <!-- <button type="button" class="btn btn-warning mt-2" onclick="isPrime()">Check!</button> -->
+
+            <h4 id="result">Result:</h4> 
+           </div>
+
+        </form>
+    </div>
+
+<script type="text/javascript">
+    //function for check prime number
+    function isPrime() {
+        var num, i, flag = true;
+        num = document.getElementById("input-num").value;
+        num = parseInt(num)
+
+        for(i= 2; i<= num-1; i++) {
+            console.log( 'i is' + i + 'and' + num);
+            if (num % i == 0) {
+                flag = false;
+                console.log('br.I is:' + i + 'and br.num:' + num);
+                break;
+            } 
+        }
+            if (flag == true) {
+                document.getElementById("result").innerHTML = num + "is Prime";
+            } else {
+                document.getElementById("result").innerHTML = num + "is not Prime";
+            }            
+        
+    }
+</script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="./assets/js/jquery-3.3.1.slim.min.js"></script>
+<script src="./assets/js/popper.min.js"></script>
+<script src="./assets/js/bootstrap.min.js"></script>
+
+<!-- prismjs -->
+<script src="./assets/prismjs/prism.js"></script>
+  </body>
+</html>
